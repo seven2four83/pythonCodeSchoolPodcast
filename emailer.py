@@ -15,7 +15,7 @@ def send_emails(emails,schedule,weather_forecasts):
     server = smtplib.SMTP('smtp.gmail.com','587')
     server.starttls()
     password = input('Enter gmail password')
-    from_email = 'jagan.mooorthy@gmail.com'
+    from_email = 'flying.through.python@gmail.com'
     to_email = 'vikibornin1991@gmail.com'
     server.login(from_email, password)
     server.sendmail(from_email, to_email,'Yours,\nPython Noob')
